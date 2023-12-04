@@ -1,0 +1,109 @@
+*
+    font-family: 'Roboto', sans-serif
+
+$primary-color: #364656
+$white-color: #fff
+
+.animated
+    -webkit-transition: all 0.4s ease
+    -moz-transition: all 0.4s ease
+    -o-transition: all 0.4s ease
+    transition: all 0.4s ease
+
+html, body, main
+    width: 100%
+    height: 100%
+    background-color: transparent !important
+
+.btn-group-head-border
+    border-radius: 0
+    border-color: $white-color !important
+    border: 0.15em solid
+
+section.parallax-container
+    background-size: cover
+    background-image: url('../img/background.jpg')
+
+    .container
+        height: 50%
+        margin: auto
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        color: $white-color
+        text-transform: uppercase
+        padding-top: 48px
+        padding-bottom: 48px
+        
+        h1
+            font-size: 36px
+            margin-bottom: 0
+            font-weight: 700
+
+        h2
+            margin-top: 20px
+            margin-bottom: 10px
+
+        @media (min-width:768px)
+            h1
+                font-size: 63px
+
+.btn-group
+    padding-top: 40px
+
+    .btn-lg
+        padding: 0.63rem 1rem
+
+.btn-head
+    .btn-primary
+        @extend .animated
+        background-color: transparent
+        @extend .btn-group-head-border
+        border-right: 0.075em solid
+        
+        &:hover, &:active, &:focus
+            background-color: $primary-color !important
+            @extend .btn-group-head-border
+            border-right: 0.075em solid
+
+    .btn-success
+        @extend .animated
+        @extend .btn-group-head-border
+        text-transform: uppercase
+
+        &:hover
+            @extend .btn-group-head-border
+
+.navbar-toggleable-xs.collapse.in, .navbar-toggleable-xs.collapsing
+    overflow: hidden
+    clear: both     
+
+.navbar
+    @extend .animated
+    padding: 1.063rem 1rem !important
+    text-transform: uppercase
+    background-color: transparent
+
+    .container
+        width: 1370px
+    
+    li a
+        @extend .animated
+        color: #a2abb3 !important
+        margin-left: 15px
+        margin-right: 15px
+        font-size: 14px
+        padding-top: .5rem !important
+        padding-bottom: .5rem !important
+
+        &:hover, &:active, &:focus
+            color: $white-color !important
+
+.navbar-brand
+    color: #ccc !important
+
+.sticky
+    background-color: $primary-color !important
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)

@@ -1,0 +1,88 @@
+* {
+  font-family: "Roboto", sans-serif; }
+
+.animated, .btn-head .btn-primary, .btn-head .btn-success, .navbar, .navbar li a {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+html, body, main {
+  width: 100%;
+  height: 100%;
+  background-color: transparent !important; }
+
+.btn-group-head-border, .btn-head .btn-primary, .btn-head .btn-primary:hover, .btn-head .btn-primary:active, .btn-head .btn-primary:focus, .btn-head .btn-success, .btn-head .btn-success:hover {
+  border-radius: 0;
+  border-color: #fff !important;
+  border: 0.15em solid; }
+
+section.parallax-container {
+  height: 100%;
+  background-size: cover;
+  background-image: url("../img/background.jpg"); }
+  section.parallax-container .container {
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 48px;
+    padding-bottom: 48px; }
+    section.parallax-container .container h1 {
+      font-size: 36px;
+      margin-bottom: 0;
+      font-weight: 700; }
+    section.parallax-container .container h2 {
+      margin-top: 20px;
+      margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      section.parallax-container .container h1 {
+        font-size: 63px; } }
+
+.btn-group {
+  padding-top: 40px; }
+  .btn-group .btn-lg {
+    padding: 0.63rem 1rem; }
+
+.btn-head .btn-primary {
+  background-color: transparent;
+  border-right: 0.075em solid; }
+  .btn-head .btn-primary:hover, .btn-head .btn-primary:active, .btn-head .btn-primary:focus {
+    background-color: #364656 !important;
+    border-right: 0.075em solid; }
+.btn-head .btn-success {
+  text-transform: uppercase; }
+
+.navbar-toggleable-xs.collapse.in, .navbar-toggleable-xs.collapsing {
+  overflow: hidden;
+  clear: both; }
+
+.navbar {
+  padding: 1.063rem 1rem !important;
+  text-transform: uppercase;
+  background-color: transparent; }
+  .navbar .container {
+    width: 1370px; }
+  .navbar li a {
+    color: #a2abb3 !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important; }
+    .navbar li a:hover, .navbar li a:active, .navbar li a:focus {
+      color: #fff !important; }
+
+.navbar-brand {
+  color: #ccc !important; }
+
+.sticky {
+  background-color: #364656 !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+/*# sourceMappingURL=style.css.map */

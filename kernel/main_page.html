@@ -1,0 +1,300 @@
+{% extends "main.html" %}
+{% block content %}
+{% load staticfiles %}
+		<header class="parallax-main" data-stellar-background-ratio="0.5" style="background-image: url({% static 'img/pustynya-zakat-ozero.jpg' %}); no-repeat center center;">
+            <div class="jumbotron header-content">
+                    <div class="container header-content-inner">
+                        <h2 class="text-center">web-студия</h2>  
+                        <h1 class="text-center">eduard design</h1>
+                        <div class="btn-group btn-head" style="padding-top: 40px">
+                            <a href="#how-it-works" class="btn btn-primary btn-lg" role="button">Подробнее</a>
+                            <button class="btn btn-success btn-lg" role="button" data-toggle="modal" data-target="#order">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <section id="how-it-works" style="">
+            <div class="container text-center">
+                <h1 class="section-header">Как это работает?</h1>
+                <div class="box-wrap">
+                    <div class="row">
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="heading_holder text-center">
+                                <img class="big-icon" src="{% static 'img/icons/exclusive.svg' %}" alt="">
+                                <h3>Интервью, постановка задачи</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="heading_holder text-center">
+                                <img class="big-icon" src="{% static 'img/icons/agreement.svg' %}" alt="">
+                                <h3>Оформление договора и ТЗ</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="heading_holder text-center">
+                                <img class="big-icon" src="{% static 'img/icons/money.svg' %}" alt="">
+                                <h3>Предоплата 20% по счету</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="heading_holder text-center">
+                                <img class="big-icon" src="{% static 'img/icons/design.svg' %}" alt="">
+                                <h3>Разработка дизайна</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="heading_holder text-center">
+                                <img class="big-icon" src="{% static 'img/icons/code.svg' %}" alt="">
+                                <h3>Программирование функционала</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="heading_holder text-center">
+                                <img class="big-icon" src="{% static 'img/icons/server.svg' %}" alt="">
+                                <h3>Установка сайта на сервер</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="heading_holder text-center">
+                                <img class="big-icon" src="{% static 'img/icons/training.svg' %}" alt="">
+                                <h3>Обучение по управлению сайтом</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="heading_holder text-center">
+                                <img class="big-icon" src="{% static 'img/icons/fullmoney.svg' %}" alt="">
+                                <h3>Доплата по счету</h3>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="price" class="invert">
+            <div class="container text-center">
+                <h1 class="section-header">Наши услуги</h1>
+                <div class="box-wrap">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="heading_holder text-center">
+                            <img class="big-icon" src="{% static 'img/icons/visit.svg' %}" alt="">
+                            <h3>Сайт-визитка</h3>
+                            <p>от 19&nbsp;900 <em class="fa fa-rub">&nbsp;</em></p>
+                            <!--<div class="btn-group">
+                                <button class="btn btn-default btn-lg" role="button" data-toggle="modal" data-target="#site-card">Подробнее</buttona>
+                                <button class="btn btn-success btn-lg" role="button" data-toggle="modal" data-target="#order">Заказать</buttona>
+                            </div>-->
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="heading_holder text-center">
+                            <img class="big-icon" src="{% static 'img/icons/landing.svg' %}" alt="">
+                            <h3>Landing Page</h3>
+                            <p>от 24&nbsp;900 <em class="fa fa-rub">&nbsp;</em></p>
+                            <!--<div class="btn-group">
+                                <button class="btn btn-default btn-lg" role="button" data-toggle="modal" data-target="#landing-page">Подробнее</buttona>
+                                <button class="btn btn-success btn-lg" role="button" data-toggle="modal" data-target="#order">Заказать</buttona>
+                            </div>-->
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="heading_holder text-center">
+                            <img class="big-icon" src="{% static 'img/icons/catalog.svg' %}" alt="">
+                            <h3>Интернет-магазин</h3>
+                            <p>от 49&nbsp;900 <em class="fa fa-rub">&nbsp;</em></p>
+                            <!--<div class="btn-group">
+                                <button class="btn btn-default btn-lg" role="button" data-toggle="modal" data-target="#site-directory">Подробнее</buttona>
+                                <button class="btn btn-success btn-lg" role="button" data-toggle="modal" data-target="#order">Заказать</button>
+                            </div>-->
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="heading_holder text-center">
+                            <img class="big-icon" src="{% static 'img/icons/problem.svg' %}" alt="">
+                            <h3>Эксклюзивный сайт</h3>
+                            <p>Стоимость договорная</p>
+                            <!--<div class="btn-group">
+                                <button class="btn btn-default btn-lg" role="button" data-toggle="modal" data-target="#exclusive">Подробнее</buttona>
+                                <button class="btn btn-success btn-lg" role="button" data-toggle="modal" data-target="#order">Заказать</buttona>
+                            </div>-->
+                            <hr>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container text-center">
+                <h1 class="section-header">Мы сделали</h1>
+                <div class="box-wrap">
+                    <div class="row">
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" >
+                            <img src="http://www.deasign.ru/img/projects/projects_preview_estel.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <img src="http://www.deasign.ru/img/projects/projects_preview_freestyle.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <img src="http://www.deasign.ru/img/projects/projects_preview_smolny.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <img src="http://www.deasign.ru/img/projects/projects_preview_sulandia.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <img src="http://www.deasign.ru/img/projects/projects_preview_actionmedia.jpg">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <img src="http://www.deasign.ru/img/projects/projects_preview_coffeeshop.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container text-center">
+                <h1 class="section-header">Контакты</h1>
+                <div class="box-wrap">
+                </div>
+            </div>
+        </section>
+        <div id="site-card" class="modal fade">
+            <div class="modal-wrapper">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-window">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-header">
+                            
+                            <h4 class="modal-title">
+                                <img class="small-icon" src="{% static 'img/creditcard.svg' %}" alt="">
+                                Сайт визитка
+                            </h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Подойдет вам, если вы не хотите тратить большие средства на создание сайта. Это сайт из одной-двух страниц, содержащий информацию о вас и вашей компании, продаваемых товарах, контактные данные. </p>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="landing-page" class="modal fade">
+            <div class="modal-wrapper">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-window">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                <img class="small-icon" src="{% static 'img/browser.svg' %}" alt="">
+                                Посадочная страница
+                            </h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Посадочная страница (landing page) - это сайт, состоящий из одной (или несколких) страницы, который представляет товар или услугу. Основным назначением таких одностраничных веб-сайтов является повышение рекламного эффекта и расширение целевой аудитории.</p>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="site-directory" class="modal fade">
+            <div class="modal-wrapper">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-window">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                <img class="small-icon" src="{% static 'img/dolly.svg' %}" alt="">
+                                Каталог товаров
+                            </h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Каталог товаров - это мини интернет-магазин, наиболее удобен для компаний, имеющих большую номенклатуру товаров и продукции. Если вы часто обновляете каталог продукции или планируете создание Интернет-магазина, то Каталог товаров - это именно то, что вам нужно. Структурированный список товаров разбит на категории. Для каждого товара можно задать описание, стоимость, фотографию, пометку о наличии и др.</p>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="exclusive" class="modal fade">
+            <div class="modal-wrapper">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-window">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                <img class="small-icon" src="{% static 'img/tools.svg' %}" alt="">
+                                Эксклюзивный сайт
+                            </h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Эксклюзивный сайт — это сайт, который делается с нуля специально для вас. Возможности такого сайта ограничиваются лишь вашей фантазией. Создавая для вас эксклюзивный сайт, мы сможем реализовать любые пожелания, а также разработать уникальный дизайн, который подчеркнёт солидность вашей компании. <b>Эксклюзивный сайт</b> — гарантия вашего имиджа.</p>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="order" class="modal fade">
+            <div class="modal-wrapper">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-window">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal">×</button>
+                            <h4 class="modal-title">Заказать</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec placerat sem ipsum, ut faucibus nulla. Nullam mattis volutpat
+                                dolor, eu porta magna facilisis ut. In ultricies, purus sed pellentesque
+                                mollis, nibh tortor semper elit, eget rutrum purus nulla id quam.
+                            </p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
